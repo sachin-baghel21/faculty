@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>password</title>
+        <!-- font awesome link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- tailwind cdn link here -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- this is animation link of js library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="/css/dashborad.css">
+    </head>
+
+    <body>
+        <header
+            class="md:w-full bg-white md:py-6 sticky top-[0] right-[0] z-[3] flex items-center justify-between md:shadow-sm md:shadow-gray-800 shadow-sm shadow-gray"
+            id="header">
+            <div class="flex md:gap-5 items-center md:px-4">
+                <i class="fa-solid fa-bars-staggered text-3xl px-6 pt-1 active:text-blue-500 md:hidden"
+                    id="aside-link"></i>
+                <i class="fa-solid fa-book-open-reader md:text-4xl text-3xl text-sky-500"></i>
+                <h3 class="md:text-2xl md:block hidden">Education Temple</h3>
+            </div>
+            <div class="md:px-8 px-4 flex">
+                <div class="text-center md:w-96 h-40 w-full-screen px-4 py-4 bg-white absolute md:top-[90px] md:right-[30px] top-[60px] right-[2%] shadow-sky-600 shadow-lg border-2 border-blue-500 rounded-md"
+                    id="profile-pop">
+                    <div class="flex justify-between gap-3">
+                        <p>Student-Joel</p>
+                        <p>Course-<span>Diploma</span></p>
+                        <span>
+                            Year- I
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center h-full">
+                        <a href="#" class="hover:underline active:text-sky-400 text-left flex">Change Password</a>
+                        <button
+                            class="bg-gray-800 px-4 py-2 text-white rounded-xl active:text-blue-300 flex items-center"><i
+                                class="fa-solid fa-right-from-bracket pr-2"></i><a href="#">Logout</a></button>
+                    </div>
+                </div>
+                <!-- nav icons  -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class=" w-fit hover:bg-[rgb(0,0,0,0.1)] drop-shadow-lg md:py-3 md:px-4 p-4 rounded">
+                        <i class="fa-regular fa-bell active:text-blue-500 sm:text-2xl text-2xl"></i></a>
+                    <!-- <i class="fa-regular fa-user text-red-500 active:text-blue-500 sm:text-2xl text-2xl"></i> -->
+                    <a href="#" class="bg-[rgb(0,0,0,0.1)] rounded-full" id="icon">
+
+                        <img src="/Html/assets/faculty-demo.png"
+                            class="md:w-[45px] md:h-[45px] w-[35px] h-[35px] rounded-full hover:border-black border-2"
+                            id="user-img1">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- aside-bar -->
+        <aside
+            class="md:w-[310px] md:h-screen flex flex-1 md:fixed md:top-[105px] md:left-0 fixed top-[0px] left-[-100%] shadow-2xl aside-bar z-[4]">
+            <div class="w-full py-4 bg-gray-800 md:font-semibold">
+                <div
+                    class="relative top-[-16px] bg-white py-2 px-5 text-center flex gap-5 justify-between items-center sm:hidden">
+                    <div>
+                        <i class="fa-solid fa-book-open-reader text-3xl text-sky-500"></i>
+                        <h3>Portal</h3>
+                    </div>
+                    <i class="fa-solid fa-xmark text-3xl active:text-red-500" id="cross-icon"></i>
+                </div>
+                <div class="text-white flex flex-col mt-5">
+                    <div class="md:border-b-4 md:border-gray-700 border-b-2 border-gray-700 px-4 py-4 mb-4">
+                        <div class="flex justify-between items-center">
+                            <div class="relative z-[10]" data-aos="fade-left">
+                                <img src="/Html/assets/faculty-demo.png"
+                                    class="lg:w-[100px] lg:h-[100px] w-[80px] h-[80px] border-2 rounded-xl drop-shadow-md shadow-2xl shadow-black"
+                                    id="user-img">
+                                <label for="profile-link"><i
+                                        class="fa-regular fa-pen-to-square absolute right-0 top-0 p-2 lg:text-lg text-md hover:bg-gray-200 rounded-sm active:text-blue-800"></i></label>
+                                <input type="file" accept="image/jpeg, image/png, image/jpg" id="profile-link">
+                            </div>
+                            <div class="border-2 border-white px-2 rounded-r-xl bg-[linear-gradient(whitesmoke,silver)]"
+                                data-aos="fade-right">
+                                <p class="text-black">Kelvin powell</p>
+                                <p><a href="#" class="text-blue-600 font-semibold">(Python Programming)</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="time-table.html"
+                        class="w-full md:mb-6 mb-3 md:py-3 md:py-3 py-2 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl sm:text-lg text-lg">
+                        <i class="fa-solid fa-circle-nodes px-2 sm:text-lg text-md"></i>Time Table
+                        <i class="fa-solid fa-angles-right sm:pl-[120px] md:text-lg text-sm pl-[100px]"></i>
+                    </a>
+                    <a href="Course.html"
+                        class="w-full md:mb-6 mb-3 md:py-3 md:py-3 py-2 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl Registration-link sm:text-lg text-lg">
+                        <i class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Course Student
+                        <i class="fa-solid fa-angles-right sm:pl-[80px] md:text-lg text-sm pl-[60px]"></i>
+                    </a>
+                    <a href="attendence.html"
+                        class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl Main-link sm:text-lg text-lg">
+                        <i class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Mark Attendence
+                        <i class="fa-solid fa-angles-right sm:pl-[70px] md:text-lg text-sm pl-[48px]"></i></a>
+                    <a href="notification.html"
+                        class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl Faculty-link sm:text-lg text-lg"><i
+                            class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Notifications
+                        <i class="fa-solid fa-angles-right sm:pl-[110px] pl-[90px] md:text-lg text-sm"></i></a>
+                    <a href="updatePass.html"
+                        class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl Fee-link sm:text-lg text-lg"><i
+                            class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Change Password<i
+                            class="fa-solid fa-angles-right sm:pl-[62px] pl-[44px] md:text-lg text-sm"></i></a>
+                    <a href="#"
+                        class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl sm:text-lg text-lg"><i
+                            class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Settings
+                        <i class="fa-solid fa-angles-right sm:pl-[153px] pl-[132px] md:text-lg text-sm"></i></a>
+                    <a href="#"
+                        class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl sm:text-lg text-xl Result-link">
+                        <i class="fa-solid fa-right-from-bracket px-2 sm:text-lg text-lg"></i>Logout
+                        <i class="fa-solid fa-angles-right sm:pl-[156px] pl-[134px] md:text-lg text-sm"></i></a>
+        </aside>
+        <main class="md:w-4/5 w-full h-[80vh] mt-2 md:ml-[320px] md:border-2 md:border-green-800 rounded-md"
+            data-aos="zoom-in">
+            <div class="bg-orange-500 py-2">
+                <h1 class="font-semibold text-2xl px-2 text-gray-700">Change Password<i
+                        class="fa-solid fa-key px-2 text-xl"></i></h1>
+            </div>
+            <div class=" h-3/5 flex flex-col md:justify-center md:mt-0 mt-8 items-center h-full">
+                <div class="md:w-3/5 h-3/5  flex flex-col justify-center">
+                    <div
+                    class="w-full h-full bg-white py-4 px-4 rounded-y-3xl flex flex-col justify-center items-center px-2 shadow-md rounded-2xl">
+                    <i class="fa-brands fa-codepen md:text-4xl text-5xl text-center"></i>
+                        <form action="#" method="post">
+                            <input type="text" placeholder="enter old password" class="w-full py-2 rounded-md px-4 bg-blue-100 my-2">
+                            <input type="password" placeholder="enter new password"
+                                class="w-full py-2 rounded-md px-4 bg-blue-100 my-2">
+                            <input type="password" placeholder="confirm your password"
+                                class="w-full py-2 rounded-md px-4 bg-blue-100">
+                            <button
+                                class="w-full bg-green-500 hover:bg-green-600 text-white px-20 py-2 rounded-md font-semibold mt-4">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <footer class="w-full">
+                    <div class="bg-gray-800 absolute bottom-0 w-full py-4 text-center text-white">
+                        <h1 class="text-xl">All right reserved 2023-24</h1>
+                        <p class="text-sm">dhangarsachin50@gmail.com</p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+        <script src="/JS/portal.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 800,
+            });
+        </script>
+    </body>
+
+</html>
