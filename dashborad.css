@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Linden+Hill&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Linden+Hill&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200&family=Roboto&family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Linden+Hill&family=Montserrat:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200&family=Preahvihear&family=Roboto&family=Sora:wght@200&family=Tajawal:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x:  hidden; */
+    background-color: rgb(220, 236, 250);
+}
+
+::selection {
+    background: none;
+}
+
+#time-table {
+    overflow: scroll-x;
+    font-family: 'Linden Hill', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
+}
+
+#profile-link {
+    display: none;
+}
+
+#header,
+#section,
+#ranges,
+#Academic,
+#my-profile {
+    font-family: 'Linden Hill', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
+}
+
+#section {
+    background: url('/Html/assets/college.png');
+    background-size: contain;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+#header {
+    font-weight: 800;
+}
+
+.fonts {
+    font-family: 'Inter', sans-serif;
+    font-family: 'sora', serif;
+
+}
+
+#msg::after {
+    content: '';
+    position: relative;
+    bottom: 100px;
+    right: 0;
+    background: gray;
+    width: 200px;
+    height: 100px;
+}
+
+#profile-pop {
+    background: url('/Html/assets/profile-bg.webp');
+    background-repeat: no-repeat;
+    background-position: 100% left;
+    background-size: cover;
+    /* width: 350px;          */
+    /* height: 180px; */
+    transition: all 0.3s ease;
+    transform: scaley(0.8);
+    position: absolute;
+    display: none;
+}
+
+.hide {
+    display: block !important;
+}
+
+#profile-pop::after {
+    content: "";
+    background-image: linear-gradient(45deg, black 50%, rgba(76, 76, 250, 0.253) 50%);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    transform: rotate(135deg);
+    /* box-shadow: 0 5px 10px white; */
+}
+/* slide css  */
+.slide1 {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide1 {
+    position: relative !important;
+    left: 0px !important;
+    opacity: 1 !important;
+}
+
+.slide2 {
+    position: relative;
+    right: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide2 {
+    position: relative !important;
+    right: 0px !important;
+    opacity: 1 !important;
+}
+
+.slide3 {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide3 {
+    position: relative !important;
+    left: 0px !important;
+    opacity: 1 !important;
+}
+
+.slide4 {
+    position: relative;
+    right: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide4 {
+    position: relative !important;
+    right: 0px !important;
+    opacity: 1 !important;
+}
+
+.slide5 {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide5 {
+    position: relative !important;
+    left: 0px !important;
+    opacity: 1 !important;
+}
+
+.slide6 {
+    position: relative;
+    right: -200px;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.activeSlide6 {
+    position: relative !important;
+    right: 0px !important;
+    opacity: 1 !important;
+}
+
+
+/* side-bar links */
+.reg-links {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+}
+
+.reg-active {
+    height: 90px;
+}
+
+.main-links {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+}
+
+.main-active {
+    height: 160px;
+}
+
+.fac-links {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+}
+
+.fac-active {
+    height: 105px;
+}
+
+.fee-links {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+}
+
+.fee-active {
+    height: 110px;
+}
+
+.res-links {
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+}
+
+.res-active {
+    height: 110px;
+}
+
+/* aside code here  */
+.aside-bar {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Linden Hill', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* border: 5px solid red; */
+}
+
+.aside-active {
+    left: 0% !important;
+}
+
+/* progress-bar light effects */
+#light::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.2));
+    /* background: black; */
+    transform: rotate(90deg);
+    position: absolute;
+    left: -10%;
+    animation: go 1s ease infinite;
+}
+
+@keyframes go {
+    form {
+        left: -10%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* crausol bar styles */
+/* Optional: Custom styles */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex: 1;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* counter part here  */
+
+.counter {
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-bar{
+            font-family: 'Poppins', sans-serif;
+                font-family: 'Sora', sans-serif;
+}
