@@ -69,7 +69,6 @@ body {
 }
 
 #profile-pop {
-    background: url('/Html/assets/profile-bg.webp');
     background-repeat: no-repeat;
     background-position: 100% left;
     background-size: cover;
