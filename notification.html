@@ -13,7 +13,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- this is animation link of js library -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="dashborad.css">
+        <link rel="stylesheet" href="/css/dashborad.css">
     </head>
 
     <body>
@@ -27,8 +27,8 @@
                 <h3 class="md:text-2xl md:block hidden">Education Temple</h3>
             </div>
             <div class="md:px-8 px-4 flex">
-                <div class="text-center md:w-96 h-40 w-full-screen px-4 py-4 bg-[linear-gradient(20deg,blue,teal,green)] absolute md:top-[90px] md:right-[30px] top-[60px] right-[2%] shadow-sky-600 shadow-lg border-2 border-blue-500 rounded-md"
-                 id="profile-pop">
+                <div class="text-center md:w-96 h-40 w-full-screen px-4 py-4 bg-white absolute md:top-[90px] md:right-[30px] top-[60px] right-[2%] shadow-sky-600 shadow-lg border-2 border-blue-500 rounded-md"
+                    id="profile-pop">
                     <div class="flex justify-between gap-3">
                         <p>Student-Joel</p>
                         <p>Course-<span>Diploma</span></p>
@@ -50,7 +50,7 @@
                     <!-- <i class="fa-regular fa-user text-red-500 active:text-blue-500 sm:text-2xl text-2xl"></i> -->
                     <a href="#" class="bg-[rgb(0,0,0,0.1)] rounded-full" id="icon">
 
-                        <img src="faculty-demo.png"
+                        <img src="/Html/assets/faculty-demo.png"
                             class="md:w-[45px] md:h-[45px] w-[35px] h-[35px] rounded-full hover:border-black border-2"
                             id="user-img1">
                     </a>
@@ -73,7 +73,7 @@
                     <div class="md:border-b-4 md:border-gray-700 border-b-2 border-gray-700 px-4 py-4 mb-4">
                         <div class="flex justify-between items-center">
                             <div class="relative z-[10]" data-aos="fade-left">
-                                <img src="faculty-demo.png"
+                                <img src="/Html/assets/faculty-demo.png"
                                     class="lg:w-[100px] lg:h-[100px] w-[80px] h-[80px] border-2 rounded-xl drop-shadow-md shadow-lg shadow-black"
                                     id="user-img">
                                 <label for="profile-link"><i
@@ -109,7 +109,7 @@
                         class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl Fee-link sm:text-lg text-lg"><i
                             class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Change Password<i
                             class="fa-solid fa-angles-right sm:pl-[62px] pl-[44px] md:text-lg text-sm"></i></a>
-                    <a href="#"
+                    <a href="setting.html"
                         class="w-full sm:mb-3 md:mb-6 mb-3 py-3 ml-4 active:text-black hover:bg-sky-400 rounded-l-2xl sm:text-lg text-lg"><i
                             class="fa-solid fa-circle-nodes px-2 sm:text-lg text-lg"></i>Settings
                             <i class="fa-solid fa-angles-right sm:pl-[153px] pl-[132px] md:text-lg text-sm"></i></a>
@@ -118,14 +118,22 @@
                             <i class="fa-solid fa-right-from-bracket px-2 sm:text-lg text-lg"></i>Logout
                         <i class="fa-solid fa-angles-right sm:pl-[156px] pl-[134px] md:text-lg text-sm"></i></a>
         </aside>
-        <main class="md:w-4/5 w-full rounded-md mt-4 md:ml-[320px] border-2 border-black">
-            <div class="bg-[linear-gradient(teal,yellowgreen)] md:py-4 py-2 px-2 md:text-2xl text-xl font-sarif">Create Notifications)-:</div>
+        <main class="md:w-4/5 w-full md:h-[80vh] h-full rounded-md mt-4 md:ml-[320px] relative">
+            <div class="w-full md:h-[80vh] h-[85vh]">
+            <h1 class="bg-[linear-gradient(teal,yellowgreen)] md:py-4 py-2 px-2 md:text-2xl text-xl text-center text-gray-800 font-sarif">Create Notification</h1>
             <div class="bg-white w-full pb-4 flex flex-col justify-center items-center">
-                <textarea name="note" cols="100" rows="10" placeholder="enter your note..." class="w-full border-2 border-x-8 border-blue-700 p-2 font-sarif rounded-b-md"></textarea>
+                <textarea name="note" cols="100" rows="10" placeholder="Write your note..." class="w-full border-2 border-x-8 border-blue-700 p-2 font-sarif rounded-b-md"></textarea>
                 <button class="bg-blue-500 hover:bg-blue-600 px-20 py-2 rounded-md shadow-sm shadow-black text-center font-semibold hover:text-white"><i class="fa-solid fa-paper-plane px-1"></i>Send</button>
             </div>
+            <footer class="w-full">
+                <div class="bg-gray-800 absolute left-0 bottom-0 w-full py-4 text-center text-white outline-0 border-0">
+                    <h1 class="text-xl">All right reserved 2023-24</h1>
+                    <p class="text-sm">dhangarsachin50@gmail.com</p>
+                </div>
+            </footer>
+        </div>
         </main>
-        <script src="portal.js"></script>
+        <script src="/JS/portal.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
